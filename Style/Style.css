@@ -681,7 +681,7 @@ button {
         width: 0px;
         height: 22px;
         position: relative;
-        top: 89px;
+        top: 87px;
         left: -213px;
     }
 
@@ -819,8 +819,12 @@ button {
     }
 
     .thi_conc>input {
-        width: 93%;
+        width: 90%;
         margin-bottom: 15px;
+    }
+
+    #wd {
+        width: 93%;
     }
 
     .fou_conc>select {
@@ -930,7 +934,7 @@ button {
         width: 0px;
         height: 22px;
         position: relative;
-        top: 75px;
+        top: 74.5px;
         left: -130px;
     }
 
