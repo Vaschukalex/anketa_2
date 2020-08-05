@@ -308,7 +308,7 @@ button {
     width: 40px;
     height: 22px;
     position: relative;
-    top: 133px;
+    top: 97px;
     left: -245px;
 }
 
@@ -427,6 +427,7 @@ button {
 
     .zak {
         left: -320px;
+        top: 107px;
     }
 
     .det_form_text {
@@ -487,7 +488,7 @@ button {
     }
 
     .zak>svg {
-        width: 45px;
+        width: 23px;
     }
 
     .pr_h2 {
@@ -649,7 +650,7 @@ button {
         width: 0px;
         height: 22px;
         position: relative;
-        top: 116px;
+        top: 89px;
         left: -213px;
     }
 
@@ -734,7 +735,7 @@ button {
     }
 
     .zak>svg {
-        width: 30px;
+        width: 13px;
     }
 
     .pr_h2 {
@@ -892,8 +893,8 @@ button {
         width: 0px;
         height: 22px;
         position: relative;
-        top: 100px;
-        left: -133px;
+        top: 75px;
+        left: -130px;
     }
 
     .fr_to>select {
