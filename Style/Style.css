@@ -121,15 +121,19 @@ select {
     border: 1px solid #dfdfdf;
     background-size: 10px;
 }
-.arr>select{
-    background-position-x: 96%;  
+
+.arr>select {
+    background-position-x: 96%;
 }
-.thi_conc>select{
-    background-position-x: 96%; 
+
+.thi_conc>select {
+    background-position-x: 96%;
 }
-.fou_conc>select{
-    background-position-x: 96%; 
+
+.fou_conc>select {
+    background-position-x: 96%;
 }
+
 textarea {
     height: 130px;
     resize: none;
@@ -225,7 +229,7 @@ input:focus {
 }
 
 .fou_conc>select {
-    width: 100%;
+    width: 103%;
 }
 
 .fou_conc>input {
@@ -815,7 +819,7 @@ button {
     }
 
     .thi_conc>input {
-        width:89%;
+        width: 93%;
         margin-bottom: 15px;
     }
 
