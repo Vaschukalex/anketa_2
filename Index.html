@@ -56,7 +56,8 @@
                             <filter id="filter0_d" x="0" y="2" width="48" height="30" filterUnits="userSpaceOnUse"
                                 color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
                                 <feOffset dy="2" />
                                 <feGaussianBlur stdDeviation="2" />
                                 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
@@ -65,7 +66,7 @@
                             </filter>
                         </defs>
                     </svg>
-            
+
                 </div>
                 <div class="header_text">
                     <p>+ 7 999 873 45 45</p>
@@ -183,7 +184,10 @@
                         </div>
                         <div class="det_form_wrap  det_sec">
                             <p class="det_form_text izm">Стоимость квартиры от и до в рублях:</p>
-                            <input placeholder="от 1 млн. до 3 млн." type="number">
+                            <div class="fr_to">
+                                <input placeholder="Стоимость от" type="number">
+                                <input placeholder="до" type="number">
+                            </div>
                         </div>
                     </div>
 
@@ -200,11 +204,17 @@
                         </div>
                         <div class="det_form_wrap d_t">
                             <p class="det_form_text">Площадь квартиры</p>
-                            <input placeholder="Выберите площадь" type="text">
+                            <div class="fr_to">
+                                <input placeholder="от" type="text">
+                                <input placeholder="до" type="text">
+                            </div>
                         </div>
                         <div class="det_form_wrap d_f">
                             <p class="det_form_text">Площадь кухни</p>
-                            <input placeholder="Выберите площадь" type="text">
+                            <div class="fr_to">
+                                <input placeholder="от" type="text">
+                                <input placeholder="до" type="text">
+                            </div>
                         </div>
                     </div>
 
@@ -216,11 +226,17 @@
                         <div class="det_form_wrap d_s">
                             <p class="det_form_text">Этаж
                             </p>
-                            <input placeholder="Этаж" type="number">
+                            <div class="fr_to">
+                                <input placeholder="от" type="number">
+                                <input placeholder="до" type="number">
+                            </div>
                         </div>
                         <div class="det_form_wrap d_t">
                             <p class="det_form_text">Этажность дома</p>
-                            <input placeholder="Этажность дома" type="number">
+                            <div class="fr_to">
+                                <input placeholder="от" type="number">
+                                <input placeholder="до" type="number">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,10 +268,10 @@
     <script src="../Script/jquery.maskedinput.js"></script>
     <script src="../Script/jquery.maskedinput.min.js"></script>
     <script>
-        $(function(){
-          $("#phone").mask("+7(999) 999-9999");
+        $(function () {
+            $("#phone").mask("+7(999) 999-9999");
         });
-        </script>
+    </script>
 </body>
 
 </html>
