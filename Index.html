@@ -148,7 +148,7 @@
                     </div>
                     <div class="conc_form_wrap sec_conc">
                         <p class="conc_f_text">Дата рождения:</p>
-                        <input placeholder="чч.мм.гг." type="date">
+                        <input id='bd' placeholder="чч.мм.гг." type="text">
                     </div>
                     <div class="conc_form_wrap thi_conc">
                         <p class="conc_f_text">Моб. телефон:</p>
@@ -233,7 +233,7 @@
                     </div>
 
                     <div class="det_form_four g_rid_fri">
-                        <div class="det_form_wrap d_fi">
+                        <div class="det_form_wrap d_fi arr">
                             <p class="det_form_text">Район</p>
                             <select>
                                 <option>Центр</option>
@@ -270,7 +270,7 @@
                 <form class="conc_form str2">
                     <div class="conc_form_wrap thi_conc">
                         <p class="conc_f_text">Материал стен:</p>
-                        <select>
+                        <select> 
                             <option>Монолитный</option>
                             <option>Панельный</option>
                             <option>Кирпичный</option>
@@ -284,7 +284,7 @@
                     </div>
                     <div class="conc_form_wrap fou_conc">
                         <p class="conc_f_text">Ремонт:</p>
-                        <select>
+                        <select> 
                             <option>Косметический ремонт</option>
                             <option>Чистовая отделка</option>
                             <option>Улучшенная черновая отделка</option>
@@ -295,7 +295,7 @@
                     </div>
                     <div class="conc_form_wrap thi_conc str2_li">
                         <p class="conc_f_text">Удобная дата и время просмотра объекта:</p>
-                        <input placeholder="чч.мм.гг. _ _ : _ _" type="date">
+                        <input  id= 'wd' placeholder="чч.мм.гг. _ _ : _ _" type="text">
                     </div>
                 </form>
             </div>
@@ -314,6 +314,9 @@
     <script>
         $(function () {
             $("#phone").mask("+7(999) 999-9999");
+            $("#bd").mask("99.99.99");
+            $("#wd").mask("99.99.99   99:99");
+
         });
     </script>
 </body>

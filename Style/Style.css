@@ -86,8 +86,8 @@ header {
     font-size: 12px;
 }
 
-input,
-select {
+input {
+    font-family: 'Roboto';
     background-color: #F7F7F7;
     height: 30px;
     border-radius: 3px;
@@ -96,14 +96,40 @@ select {
     color: #464646;
     padding-left: 10px;
     outline: none;
-
 }
 
 .det_form_wrap.d_fi {
     padding-right: 20px;
 }
 
-
+select {
+    font-family: 'Roboto';
+    background-color: #F7F7F7;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #E4E4E4;
+    font-size: 14px;
+    color: #464646;
+    padding-left: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/angle-arrow-down.png");
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 10px;
+    border: 1px solid #dfdfdf;
+    background-size: 10px;
+}
+.arr>select{
+    background-position-x: 96%;  
+}
+.thi_conc>select{
+    background-position-x: 96%; 
+}
+.fou_conc>select{
+    background-position-x: 96%; 
+}
 textarea {
     height: 130px;
     resize: none;
@@ -357,7 +383,7 @@ button {
 }
 
 .fr_to>input {
-    width: 95%;
+    width: 98%;
 }
 
 .fr_to>select {
@@ -548,12 +574,12 @@ button {
     }
 
     .thi_conc>select {
-        width: 94%;
+        width: 96%;
         margin-bottom: 15px;
     }
 
     .fou_conc>select {
-        width: 94%;
+        width: 96%;
         margin-bottom: 15px;
     }
 
@@ -609,7 +635,8 @@ button {
     }
 
     .det_form_four>.det_form_wrap>select {
-        width: 94%;
+        width: 96%;
+        background-position-x: 96%;
     }
 
     .det_form_four>.det_form_wrap>input {
@@ -667,7 +694,9 @@ button {
 @media screen and (max-width: 550px) {
     textarea {
         font-size: 12px;
-        width: 94%;
+        width: 97%;
+        padding-top: 8px;
+        padding-left: 5px;
     }
 
     .str2_li {
@@ -777,7 +806,7 @@ button {
     }
 
     .thi_conc {
-        width: 100%;
+        width: 105%;
     }
 
     .thi_conc>select {
@@ -786,13 +815,17 @@ button {
     }
 
     .thi_conc>input {
-        width: 94%;
+        width:89%;
         margin-bottom: 15px;
     }
 
     .fou_conc>select {
-        width: 94%;
+        width: 99%;
         margin-bottom: 15px;
+    }
+
+    .str2_li {
+        width: 101%;
     }
 
     .fou_conc>input {
@@ -852,7 +885,7 @@ button {
     }
 
     .det_form_four>.det_form_wrap>select {
-        width: 102%;
+        width: 99%;
     }
 
     .det_form_four>.det_form_wrap>input {
@@ -903,6 +936,10 @@ button {
 
     .fr_to>input {
         margin-bottom: 15px;
+    }
+
+    .details_data {
+        padding-bottom: 0px;
     }
 }
 
