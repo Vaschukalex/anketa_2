@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="data.php">
 </head>
 
 <body>
@@ -141,22 +142,24 @@
                     <br>
                 </div>
 
-                <form class="conc_form">
+                <form method="POST" action="data.php" class="conc_form form" id="form">
                     <div class="conc_form_wrap fir_conc">
                         <p class="conc_f_text">ФИО:</p>
-                        <input placeholder="Иванов Иван" type="text">
+                        <input name="name_lname" placeholder="Иванов Иван" type="text">
+
+
                     </div>
                     <div class="conc_form_wrap sec_conc">
                         <p class="conc_f_text">Дата рождения:</p>
-                        <input id='bd' placeholder="чч.мм.гг." type="text">
+                        <input name="bir_day" id='bd' placeholder="чч.мм.гг." type="text">
                     </div>
                     <div class="conc_form_wrap thi_conc">
                         <p class="conc_f_text">Моб. телефон:</p>
-                        <input id="phone" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" type="tel">
+                        <input name="tel_numb" id="phone" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" type="tel">
                     </div>
                     <div class="conc_form_wrap fou_conc">
                         <p class="conc_f_text">E-mail:</p>
-                        <input placeholder="Введите Ваш E-mail" type="email">
+                        <input name="email_e" placeholder="Введите Ваш E-mail" type="email">
                     </div>
                 </form>
             </div>
@@ -167,110 +170,113 @@
                 </div>
                 <br>
                 <div class="det_form">
-                    <div class="det_form_wrap_duo">
-                        <div class="det_form_wrap det_fir">
-                            <p class="det_form_text">Город, в котором планируете купить квартиру:</p>
-                            <input placeholder="В каком городе хотите купить квартиру?" type="text">
-                        </div>
-                        <div class="det_form_wrap  det_sec">
-                            <p class="det_form_text">Интересующий застройщик:</p>
-                            <input placeholder="Застрощик" type="text">
-                        </div>
-                    </div>
-                    <div class="det_form_wrap_duo">
-                        <div class="det_form_wrap det_fir">
-                            <p class="det_form_text">ЖК:</p>
-                            <input placeholder="ЖК" type="text">
-                        </div>
-                        <div class="det_form_wrap  det_sec">
-                            <p class="det_form_text izm">Стоимость квартиры от и до в рублях:</p>
-                            <div class="fr_to">
-                                <input placeholder="Стоимость от" type="number">
-                                <input placeholder="до" type="number">
+                    <form method="POST" action="data.php" id="form">
+                        <div class="det_form_wrap_duo">
+                            <div class="det_form_wrap det_fir">
+                                <p class="det_form_text">Город, в котором планируете купить квартиру:</p>
+                                <input name="town" placeholder="В каком городе хотите купить квартиру?" type="text">
+                            </div>
+                            <div class="det_form_wrap  det_sec">
+                                <p class="det_form_text">Интересующий застройщик:</p>
+                                <input name="zast" placeholder="Застрощик" type="text">
                             </div>
                         </div>
-                    </div>
+                        <div class="det_form_wrap_duo">
+                            <div class="det_form_wrap det_fir">
+                                <p class="det_form_text">ЖК:</p>
+                                <input name="jk" placeholder="ЖК" type="text">
+                            </div>
+                            <div class="det_form_wrap  det_sec">
+                                <p class="det_form_text izm">Стоимость квартиры от и до в рублях:</p>
+                                <div class="fr_to">
+                                    <input name="pr_kv_1" placeholder="Стоимость от" type="number">
+                                    <input name="pr_kv_2" placeholder="до" type="number">
+                                </div>
+                            </div>
+                        </div>
 
 
-                    <div class="det_form_four g_rid">
-                        <div class="det_form_wrap d_fi">
-                            <p class="det_form_text">Кол-во комнат</p>
-                            <select>
-                                <option>Студия</option>
-                                <option> 1</option>
-                                <option> 2</option>
-                                <option> 3</option>
-                                <option>4+</option>
-                                <option>Не принципиально</option>
-                            </select>
-                        </div>
-                        <div class="det_form_wrap d_s">
-                            <p class="det_form_text">Срок сдачи
-                            </p>
-                            <select>
-                                <option>Сдан</option>
-                                <option>В ближайшее время</option>
-                                <option>до 2021</option>
-                                <option>до 2022</option>
-                                <option>до 2023</option>
-                                <option>Не принципиально</option>
-                            </select>
-                        </div>
-                        <div class="det_form_wrap d_t">
-                            <p class="det_form_text">Площадь квартиры</p>
-                            <div class="fr_to">
-                                <input placeholder="от" type="text">
-                                <input placeholder="до" type="text">
+                        <div class="det_form_four g_rid">
+                            <div class="det_form_wrap d_fi">
+                                <p class="det_form_text">Кол-во комнат</p>
+                                <select>
+                                    <option>Студия</option>
+                                    <option> 1</option>
+                                    <option> 2</option>
+                                    <option> 3</option>
+                                    <option>4+</option>
+                                    <option>Не принципиально</option>
+                                </select>
+                            </div>
+                            <div class="det_form_wrap d_s">
+                                <p class="det_form_text">Срок сдачи
+                                </p>
+                                <select>
+                                    <option>Сдан</option>
+                                    <option>В ближайшее время</option>
+                                    <option>до 2021</option>
+                                    <option>до 2022</option>
+                                    <option>до 2023</option>
+                                    <option>Не принципиально</option>
+                                </select>
+                            </div>
+                            <div class="det_form_wrap d_t">
+                                <p class="det_form_text">Площадь квартиры</p>
+                                <div class="fr_to">
+                                    <input placeholder="от" type="text">
+                                    <input placeholder="до" type="text">
+                                </div>
+                            </div>
+                            <div class="det_form_wrap d_f">
+                                <p class="det_form_text">Площадь кухни</p>
+                                <div class="fr_to">
+                                    <input placeholder="от" type="text">
+                                    <input placeholder="до" type="text">
+                                </div>
                             </div>
                         </div>
-                        <div class="det_form_wrap d_f">
-                            <p class="det_form_text">Площадь кухни</p>
-                            <div class="fr_to">
-                                <input placeholder="от" type="text">
-                                <input placeholder="до" type="text">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="det_form_four g_rid_fri">
-                        <div class="det_form_wrap d_fi arr">
-                            <p class="det_form_text">Район</p>
-                            <select>
-                                <option>Центр</option>
-                                <option>Лесобаза</option>
-                                <option>Заречные микрорайоны</option>
-                                <option>Мыс</option>
-                                <option>Микрорайоны</option>
-                                <option>Восточный</option>
-                                <option>Московский, Червишевский тракты</option>
-                                <option>Тюменская слобода (за объездной)</option>
-                                <option>Дом обороны</option>
-                                <option>Плеханово</option>
-                                <option>Не принципиально</option>
-                                <option>Другое:</option>
-                            </select>
-                        </div>
-                        <div class="det_form_wrap d_s">
-                            <p class="det_form_text">Этаж
-                            </p>
-                            <div class="fr_to">
-                                <input placeholder="от" type="number">
-                                <input placeholder="до" type="number">
+                        <div class="det_form_four g_rid_fri">
+                            <div class="det_form_wrap d_fi arr">
+                                <p class="det_form_text">Район</p>
+                                <select>
+                                    <option>Центр</option>
+                                    <option>Лесобаза</option>
+                                    <option>Заречные микрорайоны</option>
+                                    <option>Мыс</option>
+                                    <option>Микрорайоны</option>
+                                    <option>Восточный</option>
+                                    <option>Московский, Червишевский тракты</option>
+                                    <option>Тюменская слобода (за объездной)</option>
+                                    <option>Дом обороны</option>
+                                    <option>Плеханово</option>
+                                    <option>Не принципиально</option>
+                                    <option>Другое:</option>
+                                </select>
+                            </div>
+                            <div class="det_form_wrap d_s">
+                                <p class="det_form_text">Этаж
+                                </p>
+                                <div class="fr_to">
+                                    <input placeholder="от" type="number">
+                                    <input placeholder="до" type="number">
+                                </div>
+                            </div>
+                            <div class="det_form_wrap d_t">
+                                <p class="det_form_text">Этажность дома</p>
+                                <div class="fr_to">
+                                    <input placeholder="от" type="number">
+                                    <input placeholder="до" type="number">
+                                </div>
                             </div>
                         </div>
-                        <div class="det_form_wrap d_t">
-                            <p class="det_form_text">Этажность дома</p>
-                            <div class="fr_to">
-                                <input placeholder="от" type="number">
-                                <input placeholder="до" type="number">
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-                <form class="conc_form str2">
+
+                <form class="conc_form str2" method="POST" action="data.php" id="form">
                     <div class="conc_form_wrap thi_conc">
                         <p class="conc_f_text">Материал стен:</p>
-                        <select> 
+                        <select>
                             <option>Монолитный</option>
                             <option>Панельный</option>
                             <option>Кирпичный</option>
@@ -284,7 +290,7 @@
                     </div>
                     <div class="conc_form_wrap fou_conc">
                         <p class="conc_f_text">Ремонт:</p>
-                        <select> 
+                        <select>
                             <option>Косметический ремонт</option>
                             <option>Чистовая отделка</option>
                             <option>Улучшенная черновая отделка</option>
@@ -295,17 +301,19 @@
                     </div>
                     <div class="conc_form_wrap thi_conc str2_li">
                         <p class="conc_f_text">Удобная дата и время просмотра объекта:</p>
-                        <input  id= 'wd' placeholder="чч.мм.гг. _ _ : _ _" type="text">
+                        <input id='wd' placeholder="чч.мм.гг. _ _ : _ _" type="text">
                     </div>
                 </form>
             </div>
-            <div class="comment_block">
-                <p class="conc_f_text">Дополнения и комментарии:</p>
-                <textarea name="comment" placeholder="Ваши очень важные замечания и комментарии....."></textarea>
-            </div>
-            <div class="btn_place">
-                <button class="btn">Отправить заявку</button>
-            </div>
+            <form method="POST" action="data.php" id="form">
+                <div class="comment_block">
+                    <p class="conc_f_text">Дополнения и комментарии:</p>
+                    <textarea name="comment" placeholder="Ваши очень важные замечания и комментарии....."></textarea>
+                </div>
+                <div class="btn_place">
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -319,6 +327,7 @@
 
         });
     </script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
